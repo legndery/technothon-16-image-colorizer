@@ -1,0 +1,214 @@
+.drop_uploader.drop_zone {
+    width: 100%;
+    min-height: 100px;
+    height: 80%;
+    text-align: center;
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.drop_uploader.drop_zone.hover {
+    
+}
+
+.drop_uploader.drop_zone .text_wrapper {
+    margin-top: 30px;
+}
+
+.drop_uploader.drop_zone .text_wrapper i {
+    font-size: 50px;
+    color: #9B9B9B;
+    position: relative;
+    top: 14px;
+    margin-right: 25px;
+}
+
+.drop_uploader.drop_zone .text {
+    font-family: "Rajdhani",sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: white;
+}
+
+.drop_uploader.drop_zone ul.files {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    list-style: none;
+    margin: 10px auto 35px;
+}
+
+.drop_uploader.drop_zone ul.files li {
+    font-family: "Raleway";
+    font-size: 18px;
+    color: #000000;
+    background-color: #f5f5f5;
+    border-top: 2px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
+    margin: 0;
+    padding: 5px;
+}
+
+.drop_uploader.drop_zone ul.files.thumb {
+    width: 100%;
+    text-align: left;
+    list-style: none;
+    text-align: center;
+    overflow: auto;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li {
+    width: 110px;
+    display: inline-block;
+    float: left;
+    font-family: "Raleway";
+    font-size: 18px;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    background-size: cover;
+    margin: 0 auto;
+    border: 1px solid #e1e1e1;
+    position: absolute;
+    left: 20%;
+    top 0;
+
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail i {
+    font-size: 48px;
+    position: relative;
+    top: calc(50% - 24px);
+    color: #999999;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li span.title {
+    font-family: 'Rajdhani',sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    color: white;
+    position: absolute;
+    left: 50%;
+    max-width: 40%;
+    top: 50%;
+}
+
+.drop_uploader.drop_zone ul.files li:nth-child(even) {
+    background-color: transparent;
+}
+
+.drop_uploader.drop_zone ul.files li i {
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    margin: 0px 10px;
+}
+
+.drop_uploader.drop_zone .errors p {
+    color: #FF0000;
+}
+
+.drop_uploader.drop_zone input[type=file] {
+    display: none;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+#uploadForm{
+    width: 100%;
+    height: 100%;
+}
+
+.button-primary{
+    color: aqua;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.button-primary:link {
+    color: aqua;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.button-primary:visited {
+    color: aqua;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.button-primary:hover {
+    color: greenyellow;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.button-primary:active {
+
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-size: 0.75em;
+}
+
+.button-upload-submit{
+    border: none;
+    outline: 0;
+    background: #EF5a90;
+    color: white;
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0 5px 5px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.25em;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    transform: scale(1.0,1.0);
+    z-index: 1;
+}
+
+
+.button-upload-submit:link {
+    transform: scale(1.0,1.0);
+    transition: all 0.5s;
+}
+
+.button-upload-submit:focus{
+    outline: 0;
+}
+
+.button-upload-submit:visited {
+    transform: scale(1.0,1.0);
+    transition: all 0.5s;
+}
+
+.button-upload-submit:hover {
+    transform: scale(1.025,1.025);
+    transition: all 0.5s;
+}
+
+.button-upload-submit:active {
+    transform: scale(0.975,0.975);
+    transition: all 0.5s;
+}
+
+.text{
+    color: white;
+}

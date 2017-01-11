@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		  <!--FONTS-->
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Julius+Sans+One|Cinzel:900|Quando|Noticia+Text:700|Varela+Round|Rajdhani:400,700" rel="stylesheet">
+
+		<!--Stylesheets-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/fptext.css">
+		<link rel="stylesheet" href="styles/inputbox.css">
+        <link rel="stylesheet" href="styles/resp2col.css">
+        <link rel="stylesheet" href="styles/scroll-gallery.css">
+        <link rel="stylesheet" href="styles/upload.css">
+        <link rel="stylesheet" href="styles/loading.css">
+        <link rel="stylesheet" href="styles/before-after.css">
+
+		<!--scripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="scripts/script.js"></script>
+    </head>
+
+    <body>
+
+		<div class="bgImgDiv">
+			<img src="img/homebg.jpg" id="backImage"/>
+		</div>
+
+		<div class="columnsContainer">
+			<div class="leftColumn">
+				<div class="topText">
+                <p class="topTextStyle">Colorize</p><br>
+                <p class="topTextStyle">Your</p><br>
+                <p class="topTextStyle">Memories</p><br>
+                <p class="topSubTextStyle">Convert your black and white images to colored ones using deep learning.</p>
+              </div>
+			</div>
+
+			<div class="rightColumn">
+				<div class="topBoxOutline">
+                        <div class="topBox" id="uploadBox">
+                            <div class="pasteBox">
+                                <form enctype="multipart/form-data" id="pasteForm">
+                                    <input type="text" name="url-input" id="url-input" placeholder="Paste your link here..."/>
+                                    <!--<input type="submit" value="Upload" id="upload-button"/>-->
+                                    <button id="upload-button1" type="submit" value="Submit">Go</button>
+                                </form>
+                            </div>
+                            <div class="uploadBox">
+                                <img src="img/ic_cloud_upload_black_48dp_2x.png" id="upload-icon"/>
+
+                                <form enctype="multipart/form-data" id="uploadForm">
+                                    <input type="file" name="file" id="filechooser">
+                                    <input class="button-upload-submit" type="submit" value="Submit">
+                                </form>
+                            </div>
+					   </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="first-bg shadow">
+
+		</div>
+
+		<div class="content">
+                <p id="scroll-label">Try these images</p>
+                <div class="scrollmenu">
+                    <div class="imgitem">
+                        <img id="imgclsId" class="imgcls" src="img/grid1.jpg"/>
+                    </div>
+                    <div class="imgitem">
+                        <img class="imgcls" src="img/grid2.jpg"/>
+                    </div>
+                    <div class="imgitem">
+                        <img class="imgcls" src="img/grid3.jpg"/>
+                    </div>
+                   <div class="imgitem">
+                        <img class="imgcls" src="img/grid4.jpg"/>
+                    </div>
+                    <div class="imgitem">
+                        <img class="imgcls" src="img/grid5.jpg"/>
+                    </div>
+                    <div class="imgitem">
+                        <img class="imgcls" src="img/grid6.jpg"/>
+                    </div>
+                    <div class="imgitem">
+                        <img class="imgcls" src="img/grid7.jpg"/>
+                    </div>
+                    <div class="imgitem">
+                        <img class="imgcls" src="img/grid8.jpg"/>
+                    </div>
+                    <div class="imgitem">
+                        <img sclass="imgcls" src="img/grid9.jpg"/>
+                    </div>
+                    
+                </div>
+
+			<div class="filler-div">
+				<h1></h1>
+				<p></p>
+			</div>
+
+			<div id="output-div">
+        <!--
+			  <div class="beforeAfterDiv">
+				<div class="babody">
+				  <div class="before-and-after"><img class="subject-before" src="img/test-after.png"/>
+					<div class="subject-scraper"><img class="subject-after" src="img/test-before.jpg"/></div>
+				  </div>
+        -->
+        <div class="output-sub-div">
+          <img id="single-img" src=""/>
+          <div class="output-div-text">
+            <p>Hover over the image to see original greyscale.</p>
+            <a id="output-img-link" href="" target="_blank">Download colored image</a>
+          </div>
+				</div>
+
+				<div id="loadingAnim">
+				  <div class="load-wrapp">
+					  <div class="load-9">
+						  <div class="spinner">
+							  <div class="bubble-1"></div>
+							  <div class="bubble-2"></div>
+						   </div>
+					  </div>
+				  </div>
+				</div>
+				</div>
+			</div>
+			</div>
+		<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+        <script src="scripts/upload.js"></script>
+        <script src="scripts/drop_uploader.js"></script>
+		<script src="scripts/client.js"></script>
+    <script src="scripts/client-link.js"></script>
+	</body>
+</html>

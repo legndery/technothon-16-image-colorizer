@@ -1,0 +1,86 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.columnsContainer, footer, header { 
+	position: relative;
+	margin: 0; 
+}
+
+.leftColumn, .rightColumn, footer, header {  border: none; padding: 0; }
+
+.leftColumn { margin-bottom: 10px; }
+
+.nav {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 55.5em ) {
+    body{
+        min-height: 1000px;
+    }
+  .leftColumn {}
+
+	.rightColumn {position: absolute; top: 0; right: 0; width: 50%; height: 100%}  
+	
+	.topBoxOutline{
+	padding: 20% 0 0 0;
+	height: 100%;
+	width: 100%;
+	}	
+	
+	.first-bg {
+	  min-height: 100%;
+	  margin: -10% 0 0% 0;
+	  z-index: -50;
+	}
+	
+    
+    .content {
+		position: absolute;
+        margin: 0 0 0 0;
+		top: 90%;
+		/*Change padding top tp 20 if the divs collide*/
+        padding: 0% 0 0 0;
+        width: 100%;
+		/*
+        background-color: transparent;
+        -webkit-transform: skewY(45deg);
+              transform: skewY(45deg);*/
+        color: white;
+        font-family: Rajdhani;
+        z-index: 10;
+    }
+    
+    pCarousel{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .container{
+         padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .item{
+        background-color: transparent;
+        margin: auto;
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+}
+
+@media screen and (max-height: 700px ) {
+    .first-bg{
+        /*background-color: white;
+        background: linear-gradient(-45deg, #fFF, #fFF); /* Standard syntax */
+        padding: 0 0 0 0;
+    }
+}
