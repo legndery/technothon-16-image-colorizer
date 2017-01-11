@@ -1,1 +1,4 @@
-# Image COlorizer
+# Image Colorizer
+
+Contributors:
+
